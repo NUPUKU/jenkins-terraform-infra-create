@@ -16,4 +16,4 @@ instance_type = "t2.micro"
 
 ec2_name = "prod-instance"
 
-webhook_bucket = "effulgencetech_webhook_bucket_ffreddoo"
+webhook_bucket = "effulgencetech-webhook-bucket-ffredd2080"

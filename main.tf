@@ -24,11 +24,11 @@ module "prod-instance" {
 }
 
 
-/*
+
 module "webhook_bucket" {
   source      = "./s3"
   bucket_name = var.webhook_bucket
 }
-*/
+
 
 
