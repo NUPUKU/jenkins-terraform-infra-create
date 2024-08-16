@@ -59,7 +59,7 @@ pipeline {
             }
         }
         
-        stage('Manual approval') {
+        stage('Manual approval to create') {
             steps {
                 
                 input 'Approval required for deployment'
@@ -74,7 +74,7 @@ pipeline {
             } 
         }
 
-        stage('Manual approval') {
+        stage('Manual approval to destroy') {
             steps {
                 
                 input 'Approval required for deployment'
