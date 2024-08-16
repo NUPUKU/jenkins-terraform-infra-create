@@ -74,6 +74,21 @@ pipeline {
             } 
         }
 
+        stage('Manual approval') {
+            steps {
+                
+                input 'Approval required for deployment'
+               
+            }
+        }
+
+        stage('Terraform Destroy') {
+            steps {
+                echo 'Terraform Destroy...'
+                sh 'terraform destroy -var-file="./prod-values.tfvars" --auto-approve'
+                }
+            }
+
     }
 
 }
